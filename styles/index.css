@@ -55,6 +55,11 @@ h1 {
     padding-top: 16px;
 }
 
+.is-left {
+    position: absolute;
+    left: 32px;
+}
+
 .is-right {
     position: absolute;
     right: 32px;
@@ -160,6 +165,14 @@ li {
     left: 50%;
 }
 
+.btn-in-center {
+    position: fixed;
+    width: 100vw;
+    bottom: 5vh;
+    display: flex;
+    justify-content: center;
+}
+
 #canvas {
     position: fixed;
     top: 0;
@@ -167,15 +180,22 @@ li {
     z-index: -1;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
+    .content {
+        padding: 24px 38px 40px 32px;
+    }
+
     h1 {
-    font-size: 88px;
-    padding-bottom: 40px;
-    padding-top: 16px;
+        /* font-size: 88px; */
+        font-size: 9.5vw;
+        padding-bottom: 40px;
+        padding-top: 16px;
+        /* text-align: center; */
     }
 
     h2 {
         font-size: 30px;
+        font-size: 4vw;
         padding-bottom: 48px;
     }
     h2 span:last-child {
@@ -184,20 +204,80 @@ li {
 
     h3 {
         font-size: 22px;
+        font-size: 2.85vw;
         padding-bottom: 16px;
     }
 
     p {
         padding-bottom: 24px;
-        font-size: 22px;
+        font-size: 2.85vw;
     }
 
     ul {
-    padding-left: 8px;
-    font-size: 24px;
+        padding-left: 8px;
+        font-size: 24px;
+        font-size: 2.9vw;
     }
 
     li {
-    padding-bottom: 16px;
+        padding-bottom: 16px;
+    }
+
+    .info {
+        padding: 24px 24px 24px 16px;
+    }
+
+    .btn {
+        position: static;
+        transform: translateX(-25%);
+
+    }
+}
+
+@media (max-width: 414px) {
+    .content {
+        padding: 24px 38px 40px 32px;
+    }
+
+    h1 {
+        /* font-size: 88px; */
+        font-size: 9.5vw;
+        padding-bottom: 40px;
+        padding-top: 16px;
+        /* text-align: center; */
+    }
+
+    h2 {
+        font-size: 30px;
+        font-size: 4vw;
+        padding-bottom: 48px;
+    }
+    h2 span:last-child {
+        padding-left: 48px;
+    }
+
+    h3 {
+        font-size: 22px;
+        font-size: 2.85vw;
+        padding-bottom: 16px;
+    }
+
+    p {
+        padding-bottom: 24px;
+        font-size: 2.85vw;
+    }
+
+    ul {
+        padding-left: 8px;
+        font-size: 24px;
+        font-size: 2.9vw;
+    }
+
+    li {
+        padding-bottom: 16px;
+    }
+
+    .info {
+        padding: 24px 24px 24px 16px;
     }
 }
