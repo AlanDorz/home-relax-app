@@ -3,11 +3,11 @@ function setup() {
     let myCanvas = createCanvas(windowWidth, windowHeight);
     // прикрепляем канвас в заранее созданный элемент
     myCanvas.parent("canvas");
-    background(255);
+    background('#977DFF');
 }
 
 function draw() {
-    fill(255, 15);
+    fill(151, 125, 265, 15);
     noStroke();
     rect(0, 0, windowWidth, windowHeight);
 
