@@ -20,6 +20,7 @@ let circle = new ProgressBar.Circle('#bar', {
     strokeWidth: 50,
     duration: 1000,
     easing: 'linear',
+    opacity: 0.7,
 });
 
 // Запускаем счетчик времени
